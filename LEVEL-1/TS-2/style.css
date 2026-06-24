@@ -1,0 +1,311 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#101820;
+color:#f5f7fa;
+line-height:1.6;
+overflow-x:hidden;
+}
+
+header{
+padding:22px 8%;
+background:rgba(16,24,32,.92);
+position:sticky;
+top:0;
+z-index:10;
+backdrop-filter:blur(14px);
+border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+nav{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:24px;
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+}
+
+.logo span{
+color:#f2aa4c;
+}
+
+nav ul{
+display:flex;
+align-items:center;
+gap:26px;
+list-style:none;
+}
+
+a{
+color:inherit;
+text-decoration:none;
+}
+
+nav a{
+font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:#f2aa4c;
+}
+
+.nav-btn,.primary,.secondary{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+min-height:46px;
+padding:0 24px;
+border-radius:8px;
+font-weight:600;
+transition:.3s;
+}
+
+.nav-btn,.primary{
+background:#f2aa4c;
+color:#101820;
+}
+
+.secondary{
+border:2px solid #f2aa4c;
+color:#f2aa4c;
+}
+
+.nav-btn:hover,.primary:hover{
+background:#ffd28c;
+color:#101820;
+}
+
+.secondary:hover{
+background:#f2aa4c;
+color:#101820;
+}
+
+main{
+padding:0 8%;
+}
+
+.hero{
+min-height:86vh;
+display:grid;
+grid-template-columns:1.2fr .8fr;
+align-items:center;
+gap:50px;
+}
+
+.eyebrow,.section-label{
+color:#f2aa4c;
+font-weight:700;
+letter-spacing:0;
+text-transform:uppercase;
+font-size:14px;
+margin-bottom:12px;
+}
+
+.hero h1{
+font-size:64px;
+line-height:1.08;
+max-width:700px;
+margin-bottom:22px;
+}
+
+.intro{
+max-width:640px;
+color:#c8d1da;
+font-size:18px;
+margin-bottom:32px;
+}
+
+.hero-actions{
+display:flex;
+gap:16px;
+flex-wrap:wrap;
+}
+
+.profile-panel{
+background:#f5f7fa;
+color:#101820;
+border-radius:8px;
+padding:34px;
+box-shadow:0 24px 80px rgba(0,0,0,.28);
+}
+
+.avatar{
+width:140px;
+height:140px;
+border-radius:50%;
+background:#101820;
+color:#f2aa4c;
+display:grid;
+place-items:center;
+font-size:44px;
+font-weight:700;
+margin-bottom:26px;
+}
+
+.profile-panel h2{
+font-size:30px;
+}
+
+.profile-panel p{
+color:#4b5a66;
+margin-bottom:24px;
+}
+
+.profile-stats{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:12px;
+}
+
+.profile-stats div{
+background:#e9eef2;
+border-radius:8px;
+padding:16px 10px;
+text-align:center;
+}
+
+.profile-stats strong{
+display:block;
+font-size:24px;
+color:#101820;
+}
+
+.profile-stats span{
+font-size:12px;
+color:#5f6d78;
+}
+
+.section{
+padding:80px 0;
+border-top:1px solid rgba(255,255,255,.08);
+}
+
+.section h2{
+font-size:38px;
+line-height:1.2;
+margin-bottom:26px;
+}
+
+.about{
+display:grid;
+grid-template-columns:.9fr 1.1fr;
+gap:50px;
+align-items:start;
+}
+
+.about p:last-child,.skills-grid p,.project-grid p{
+color:#c8d1da;
+}
+
+.skills-grid,.project-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:22px;
+}
+
+.skills-grid article,.project-grid article,.contact-card{
+background:#17232e;
+border:1px solid rgba(255,255,255,.08);
+border-radius:8px;
+padding:26px;
+}
+
+.skills-grid h3,.project-grid h3{
+font-size:22px;
+margin-bottom:12px;
+}
+
+.project-grid span{
+display:inline-block;
+color:#f2aa4c;
+font-weight:700;
+margin-bottom:12px;
+}
+
+.contact{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+}
+
+.contact-card p{
+margin-bottom:12px;
+color:#d8e0e7;
+}
+
+.contact-card p:last-child{
+margin-bottom:0;
+}
+
+.contact-card a{
+color:#f2aa4c;
+word-break:break-word;
+}
+
+footer{
+padding:26px 8%;
+text-align:center;
+background:#0b1218;
+color:#aeb9c2;
+}
+
+@media(max-width:920px){
+nav ul{
+display:none;
+}
+
+.hero,.about,.contact{
+grid-template-columns:1fr;
+}
+
+.hero{
+padding:70px 0;
+min-height:auto;
+}
+
+.hero h1{
+font-size:46px;
+}
+
+.skills-grid,.project-grid{
+grid-template-columns:1fr;
+}
+}
+
+@media(max-width:560px){
+header,main,footer{
+padding-left:6%;
+padding-right:6%;
+}
+
+.hero h1{
+font-size:38px;
+}
+
+.section h2{
+font-size:30px;
+}
+
+.profile-stats{
+grid-template-columns:1fr;
+}
+
+.nav-btn{
+display:none;
+}
+}

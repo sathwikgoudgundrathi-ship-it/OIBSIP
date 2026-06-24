@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Temperature Converter</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<main class="app">
+    <section class="converter">
+        <div class="intro">
+            <p class="eyebrow">Level 1 - Task 3</p>
+            <h1>Temperature Converter</h1>
+            <p>
+                Convert Celsius, Fahrenheit and Kelvin values instantly with a
+                clean interface and proper number validation.
+            </p>
+        </div>
+
+        <form id="converterForm" class="converter-form">
+            <label for="temperature">Temperature</label>
+            <input id="temperature" type="number" step="any" placeholder="Enter a value">
+
+            <div class="unit-grid">
+                <div>
+                    <label for="fromUnit">From</label>
+                    <select id="fromUnit">
+                        <option value="celsius">Celsius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="toUnit">To</label>
+                    <select id="toUnit">
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="celsius">Celsius</option>
+                        <option value="kelvin">Kelvin</option>
+                    </select>
+                </div>
+            </div>
+
+            <button type="submit">Convert</button>
+            <p id="message" class="message" aria-live="polite"></p>
+        </form>
+
+        <section class="result-panel">
+            <span>Converted Result</span>
+            <h2 id="result">--</h2>
+            <p id="formula">Choose units and press convert.</p>
+        </section>
+    </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
