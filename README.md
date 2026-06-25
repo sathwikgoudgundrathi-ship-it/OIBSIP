@@ -2,7 +2,7 @@
 
 Oasis Infobyte Web Development and Designing Internship Projects.
 
-## Completed Level
+## Completed Levels
 
 ### Level 1
 
@@ -10,4 +10,15 @@ Oasis Infobyte Web Development and Designing Internship Projects.
 - Task 2: Portfolio
 - Task 3: Temperature Converter Website
 
-Each task is organized inside the `LEVEL-1` folder with a separate project directory.
+### Level 2
+
+- Task 1: Calculator
+- Task 2: Tribute Page
+- Task 3: To-Do Web App
+- Task 4: Login Authentication
+
+### Level 3
+
+- Task: Pizza Delivery Application
+
+Each task is organized by level with a separate project directory. Level 3 uses a full-stack `backend` and `frontend` structure.

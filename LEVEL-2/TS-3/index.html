@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>To-Do Web App</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="app">
+    <section class="task-entry">
+        <p>Level 2 - Task 3</p>
+        <h1>Daily To-Do Board</h1>
+        <form id="taskForm">
+            <input id="taskInput" type="text" placeholder="Add a new task">
+            <button type="submit">Add Task</button>
+        </form>
+        <span id="feedback"></span>
+    </section>
+
+    <section class="board">
+        <div>
+            <h2>Pending Tasks</h2>
+            <ul id="pendingList"></ul>
+        </div>
+        <div>
+            <h2>Completed Tasks</h2>
+            <ul id="completedList"></ul>
+        </div>
+    </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

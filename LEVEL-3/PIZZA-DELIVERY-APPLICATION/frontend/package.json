@@ -1,0 +1,17 @@
+{
+  "name": "pizza-delivery-frontend",
+  "version": "1.0.0",
+  "description": "React frontend for Oasis Infobyte pizza delivery application",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.3.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {}
+}

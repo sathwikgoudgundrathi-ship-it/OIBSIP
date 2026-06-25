@@ -1,0 +1,24 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{min-height:100vh;background:#eef2f3;color:#172026;padding:34px}
+.app{max-width:1100px;margin:auto}
+.task-entry{background:#172026;color:white;border-radius:8px;padding:34px;margin-bottom:24px}
+.task-entry p{color:#67e8f9;font-weight:700;text-transform:uppercase;margin-bottom:8px}
+.task-entry h1{font-size:42px;margin-bottom:22px}
+form{display:grid;grid-template-columns:1fr 150px;gap:12px}
+input,button{height:48px;border-radius:8px;border:none;font-size:16px}
+input{padding:0 15px;outline:none}
+button{background:#f59e0b;color:#111827;font-weight:700;cursor:pointer}
+#feedback{display:block;min-height:22px;margin-top:14px;color:#fecaca;font-weight:600}
+.board{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.board>div{background:white;border-radius:8px;padding:24px;box-shadow:0 16px 45px rgba(23,32,38,.12)}
+h2{font-size:26px;margin-bottom:18px}
+ul{list-style:none;display:grid;gap:14px}
+li{border:1px solid #dbe2e8;border-radius:8px;padding:16px;display:grid;gap:12px}
+.task-title{font-weight:700;word-break:break-word}
+.meta{font-size:12px;color:#64748b}
+.actions{display:flex;gap:10px;flex-wrap:wrap}
+.actions button{height:38px;padding:0 14px;font-size:13px;background:#e2e8f0;color:#172026}
+.actions .complete{background:#16a34a;color:white}
+.actions .delete{background:#dc2626;color:white}
+.empty{color:#64748b;border:1px dashed #cbd5e1}
+@media(max-width:760px){body{padding:18px}.board,form{grid-template-columns:1fr}.task-entry h1{font-size:34px}}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Authentication</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="auth-app">
+    <section class="panel">
+        <p>Level 2 - Task 4</p>
+        <h1>Login Authentication</h1>
+        <div class="tabs">
+            <button class="active" data-tab="login">Login</button>
+            <button data-tab="register">Register</button>
+        </div>
+
+        <form id="loginForm" class="auth-form">
+            <input id="loginEmail" type="email" placeholder="Email">
+            <input id="loginPassword" type="password" placeholder="Password">
+            <button type="submit">Login</button>
+        </form>
+
+        <form id="registerForm" class="auth-form hidden">
+            <input id="registerName" type="text" placeholder="Full name">
+            <input id="registerEmail" type="email" placeholder="Email">
+            <input id="registerPassword" type="password" placeholder="Password">
+            <button type="submit">Create Account</button>
+        </form>
+
+        <span id="message"></span>
+    </section>
+
+    <section id="securePage" class="secure hidden">
+        <h2>Secured Dashboard</h2>
+        <p id="welcome"></p>
+        <div class="secure-grid">
+            <article><strong>Profile</strong><span>Authenticated access granted.</span></article>
+            <article><strong>Status</strong><span>Your session is active.</span></article>
+            <article><strong>Project</strong><span>Oasis Infobyte login system complete.</span></article>
+        </div>
+        <button id="logoutBtn">Logout</button>
+    </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

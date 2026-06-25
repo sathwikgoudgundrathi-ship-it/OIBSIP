@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="calculator">
+    <section class="display">
+        <p id="history">Ready</p>
+        <h1 id="screen">0</h1>
+    </section>
+
+    <section class="keys" aria-label="Calculator keypad">
+        <button data-action="clear" class="utility">AC</button>
+        <button data-action="delete" class="utility">DEL</button>
+        <button data-value="%" class="operator">%</button>
+        <button data-value="/" class="operator">/</button>
+
+        <button data-value="7">7</button>
+        <button data-value="8">8</button>
+        <button data-value="9">9</button>
+        <button data-value="*" class="operator">x</button>
+
+        <button data-value="4">4</button>
+        <button data-value="5">5</button>
+        <button data-value="6">6</button>
+        <button data-value="-" class="operator">-</button>
+
+        <button data-value="1">1</button>
+        <button data-value="2">2</button>
+        <button data-value="3">3</button>
+        <button data-value="+" class="operator">+</button>
+
+        <button data-value="0" class="wide">0</button>
+        <button data-value=".">.</button>
+        <button data-action="equals" class="equals">=</button>
+    </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
